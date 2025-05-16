@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products - Construction & RealEstate</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+   <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Construction & RealEstate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">ContactUs</a>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">AboutUs</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-2">
+                            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <!-- Header -->
+  <header class="bg-dark text-white p-4 text-center mt-5 mb-5">
+    <div class="container">
+      <h1>Our Products</h1>
+      <p class="lead">Explore our premium construction and real estate products.</p>
+    </div>
+  </header>
+
+  <!-- Products Grid -->
+  <main class="container py-5">
+    <div class="row g-4">
+      <!-- Product Cards (unchanged) -->
+      <!-- Repeat for each product -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/product1.jpg" class="card-img-top" alt="Luxury Villa">
+          <div class="card-body">
+            <h5 class="card-title">Luxury Villa</h5>
+            <p class="card-text">A modern 5-bedroom luxury villa in a prime location.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other product cards -->
+      <!-- Product 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/product2.jpg" class="card-img-top" alt="Smart Apartment">
+          <div class="card-body">
+            <h5 class="card-title">Smart Apartment</h5>
+            <p class="card-text">2-bedroom apartment with smart automation features.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal2">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/product3.jpg" class="card-img-top" alt="Commercial Office">
+          <div class="card-body">
+            <h5 class="card-title">Commercial Office</h5>
+            <p class="card-text">Fully-furnished office space with modern amenities.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal3">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modals with forms -->
+  <!-- Repeat the modal with form inside each -->
+  <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <form action="#" method="POST">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModal1Label">Luxury Villa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/product1.jpg" class="img-fluid mb-3" alt="Luxury Villa">
+            <p>This luxurious 5-bedroom villa features a private pool, garden, and smart home system.</p>
+            <ul>
+              <li>5 Bedrooms, 4 Bathrooms</li>
+              <li>Private Garden & Pool</li>
+              <li>Fully Furnished</li>
+            </ul>
+
+            <!-- Form Fields -->
+            <div class="mb-3">
+              <label for="name1" class="form-label">Your Name</label>
+              <input type="text" name="name" class="form-control" id="name1" required>
+            </div>
+            <div class="mb-3">
+              <label for="email1" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" id="email1" required>
+            </div>
+            <div class="mb-3">
+              <label for="message1" class="form-label">Message</label>
+              <textarea name="message" class="form-control" id="message1" rows="3" placeholder="Tell us your requirements..."></textarea>
+            </div>
+            <input type="hidden" name="product" value="Luxury Villa">
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Submit Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <form action="#" method="POST">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModal1Label">Smart Apartment</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/product1.jpg" class="img-fluid mb-3" alt="Smart Apartment">
+            <p>This a 2-bedroom apartment with smart automation features..</p>
+            <ul>
+              <li>2 Bedrooms, 2 Bathrooms</li>
+              <li>Private Garden & Pool</li>
+              <li>Fully Furnished</li>
+            </ul>
+
+            <!-- Form Fields -->
+            <div class="mb-3">
+              <label for="name1" class="form-label">Your Name</label>
+              <input type="text" name="name" class="form-control" id="name1" required>
+            </div>
+            <div class="mb-3">
+              <label for="email1" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" id="email1" required>
+            </div>
+            <div class="mb-3">
+              <label for="message1" class="form-label">Message</label>
+              <textarea name="message" class="form-control" id="message1" rows="3" placeholder="Tell us your requirements..."></textarea>
+            </div>
+            <input type="hidden" name="product" value="Luxury Villa">
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Submit Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <form action="#" method="POST">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModal1Label">Commercial Office</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/product1.jpg" class="img-fluid mb-3" alt="Commercial Office">
+            <p>Fully-furnished office space with modern amenities.</p>
+            <ul>
+              <li>Open-plan workspace</li>
+              <li>High-speed internet</li>
+              <li>Conference rooms</li>
+              <li>24/7 security</li>
+            </ul>
+
+            <!-- Form Fields -->
+            <div class="mb-3">
+              <label for="name1" class="form-label">Your Name</label>
+              <input type="text" name="name" class="form-control" id="name1" required>
+            </div>
+            <div class="mb-3">
+              <label for="email1" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" id="email1" required>
+            </div>
+            <div class="mb-3">
+              <label for="message1" class="form-label">Message</label>
+              <textarea name="message" class="form-control" id="message1" rows="3" placeholder="Tell us your requirements..."></textarea>
+            </div>
+            <input type="hidden" name="product" value="Luxury Villa">
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Submit Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>
+          &copy; 2025 Construction and Real Estate, Inc. &middot;
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
+      </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
